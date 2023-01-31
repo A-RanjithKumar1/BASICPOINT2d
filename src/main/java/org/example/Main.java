@@ -35,10 +35,10 @@ class BasicPoint implements Cloneable {
         p1.y = sc.nextDouble();
         boolean confm = p.eql(p1.x,p1.y);
         if(confm){
-            LOGGER.info("Both are same");
+            LOGGER.info("TRUE! Both are same");
         }
         else{
-            LOGGER.info("Both are Not Same");
+            LOGGER.info("False! Both are Not Same");
         }
         dumy="Original points are "+ p.x+"and "+p.y;
         LOGGER.info(dumy);
