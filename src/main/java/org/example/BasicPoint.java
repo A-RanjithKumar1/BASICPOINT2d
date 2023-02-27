@@ -1,8 +1,7 @@
 package org.example;
 import java.util.Scanner;
-import java.util.logging.Level;
 import java.util.logging.Logger;
-class BasicPoint implements Cloneable {
+public class BasicPoint implements Cloneable {
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
     private double x;
     private double y;
@@ -23,9 +22,9 @@ class BasicPoint implements Cloneable {
     public static void main(String[] args) throws CloneNotSupportedException {
         Scanner sc = new Scanner(System.in);
         String dumy="";
-        LOGGER.log(Level.INFO, "Enter the X-coordinate");
+        LOGGER.info( "Enter the X-coordinate");
         double x1 = sc.nextDouble();
-        LOGGER.log(Level.INFO, "Enter the Y-coordinate");
+        LOGGER.info( "Enter the Y-coordinate");
         double y1 = sc.nextDouble();
         BasicPoint p = new BasicPoint(x1, y1);
         BasicPoint p1 =p.copy();
